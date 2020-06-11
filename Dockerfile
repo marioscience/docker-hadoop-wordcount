@@ -19,12 +19,6 @@ ENV CLASSPATH $HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-client-core
 
 RUN javac -d . WordCount.java && jar cfm WordCount.jar Manifest.txt testRun/*.class
 
-#RUN $HADOOP_PREFIX/bin/hdfs dfs -copyFromLocal /inputFiles /
-#RUN jps > /src/jps.out
-
 CMD sh /etc/bootstrap.sh && sh /start-hadoop.sh
-#CMD [ "/start-hadoop.sh" ]
-#CMD cat /src/jps.out && echo "\t\t/:" && ls -la / && echo "\t\t/src" && ls -la /src && echo "\t\t/src/*" && ls -la /src/*
-
 
 
