@@ -1,3 +1,8 @@
+# To run project
+- cd to project main directory
+- docker build --tag wordcount .
+- docker run -it wordcount
+
 Client: Docker Engine - Community
  Version:           19.03.11
  API version:       1.40
@@ -25,8 +30,3 @@ Server: Docker Engine - Community
  docker-init:
   Version:          0.18.0
   GitCommit:        fec3683
-
-# To run project
-- cd to project main directory
-- docker build --tag wordcount .
-- docker run -it wordcount
