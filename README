@@ -1,4 +1,0 @@
-# To run project
-- cd to project main directory
-- docker build --tag wordcount .
-- docker run -it wordcount
